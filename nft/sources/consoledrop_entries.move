@@ -116,7 +116,7 @@ module consoledrop::consoledrop_entries {
     public entry fun remove_whitelist<COIN>(_adminCap: &NftAdminCap, pool: &mut NftPool<COIN>, froms: vector<address>) {
         consoledrop::remove_whitelist(_adminCap, pool, froms);
     }
-
+//
     public entry fun withdraw_fund<COIN>(
         _adminCap: &NftTreasuryCap,
         pool: &mut NftPool<COIN>,

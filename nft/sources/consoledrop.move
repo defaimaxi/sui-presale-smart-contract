@@ -20,7 +20,7 @@ module consoledrop::consoledrop {
     use common::kyc::{Kyc, hasKYC};
 
     struct CONSOLEDROP has drop {}
-
+//
     struct NftAdminCap has key, store {
         id: UID
     }

@@ -17,7 +17,7 @@ module w3libs::payment {
         assert!(coin::value(&base) > amount, 0);
         (coin::split(&mut base, amount, ctx), base)
     }
-
+//
     public fun take_from<COIN>(coins: vector<Coin<COIN>>, amount: u64, ctx: &mut TxContext): Coin<COIN> {
         let base = vec::pop_back(&mut coins);
         pay::join_vec(&mut base, coins);

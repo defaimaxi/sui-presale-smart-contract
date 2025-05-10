@@ -11,7 +11,7 @@ module common::tier {
     use sui::event;
     use sui::table::Table;
     use sui::table;
-
+//
     struct TIER has drop {}
 
     const ErrInvalidParams: u64 = 1001;

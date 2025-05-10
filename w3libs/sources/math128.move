@@ -21,7 +21,7 @@ module w3libs::math128 {
             b + (a - b) / 2
         }
     }
-
+//
     /// Return the value of n raised to power e
     public fun pow(n: u128, e: u128): u128 {
         if (e == 0) {

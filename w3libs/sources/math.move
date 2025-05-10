@@ -14,7 +14,7 @@ module w3libs::math {
 
     /// Maximum of u128 number.
     const MAX_U128: u128 = 340282366920938463463374607431768211455;
-
+//
     /// Adds two u128 and makes overflow possible.
     public fun overflow_add(a: u128, b: u128): u128 {
         let r = MAX_U128 - b;

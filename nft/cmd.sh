@@ -1,7 +1,7 @@
 #!/bin/bash
 #sui move build
 #sui move test
-sui client publish --force --with-unpublished-dependencies  --gas-budget 100000000
+sui client publish --force --with-unpublished-dependencies  --gas-budget 10000000
 
 ##move  call
 export ENV_ADDR=0x385514285b7b7499455c8c395c4995baf7ab97ba
@@ -16,18 +16,3 @@ export SUI_LIQUID=0x9ab077632b1720e5a1ddeed433156a3cc0a6f753
 
 export SUI_SWAP=0x95429d6b35783895a021ebb904e93f5152f9801f
 export TOKEN_SWAP=0x78e8908de2736a97438173fc9a1f4b575e692654
-
-##create pool with initial liquid
-#sui client call --gas-budget 1000 --package $PACKAGE --module "infinity_dex" --function "createPool" --args  $ADMIN_CAP $TREASURY_CAP $SUI_COIN
-
-#mint itself
-#sui client call --gas-budget 1000 --package $PACKAGE --module "infinity_dex" --function "mintToken" --args  $ADMIN_CAP $TREASURY_CAP $ENV_ADDR 100000000
-
-## add liquid
-#sui client call --gas-budget 1000 --package $PACKAGE --module "infinity_dex" --function "addLiquid" --args  $POOL $TOKEN_LIQUID $SUI_LIQUID
-
-##swap sui
-#sui client call --gas-budget 1000 --package $PACKAGE --module "infinity_dex" --function "swapSui" --args  $POOL $SUI_SWAP
-
-##swap token
-#sui client call --gas-budget 1000 --package $PACKAGE --module "infinity_dex" --function "swapToken" --args  $POOL $TOKEN_SWAP

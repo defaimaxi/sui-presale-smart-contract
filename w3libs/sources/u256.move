@@ -1,20 +1,9 @@
 // Copyright (c) Web3 Labs, Inc.
 // SPDX-License-Identifier: GPL-3.0
 
-/// The implementation of large numbers written in Move language.
-/// Code derived from original work by Andrew Poelstra <apoelstra@wpsoftware.net>
-///
-/// Rust Bitcoin Library
-/// Written in 2014 by
-///	   Andrew Poelstra <apoelstra@wpsoftware.net>
-///
-/// To the extent possible under law, the author(s) have dedicated all
-/// copyright and related and neighboring rights to this software to
-/// the public domain worldwide. This software is distributed without
-/// any warranty.
-///
-/// Simplified impl by Parity Team - https://github.com/paritytech/parity-common/blob/master/uint/src/uint.rs
-///
+impl by Parity Team - https://github.com/paritytech/parity-common/blob/master/uint/src/uint.rs
+/////
+
 /// Features:
 ///     * mul
 ///     * div

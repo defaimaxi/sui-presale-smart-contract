@@ -44,7 +44,7 @@ module consoledrop::nft_primary {
         }
     }
 
-
+// /
     #[test_only]
     public fun mint_for_test(
         name: vector<u8>,

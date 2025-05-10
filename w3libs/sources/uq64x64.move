@@ -14,7 +14,6 @@ module w3libs::uq64x64 {
     /// When a and b are equals.
     const EQUAL: u8 = 0;
 
-    /// When a is less than b equals.
     const LESS_THAN: u8 = 1;
 
     /// When a is greater than b.
